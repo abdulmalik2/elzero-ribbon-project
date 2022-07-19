@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: antiquewhite;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+/* 
+
+} */
+.container > h1 {
+    margin: 10px 0;
+    padding: 10px 35px;
+    position: relative;
+    top: -10px;
+    left: -25px;
+    display: inline-block;
+    background: #519fb1;
+    color: #fff;
+}
+.cont-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    right: -15px;
+}
+.container article {
+    width: 250px;
+    min-height: 250px;
+    max-height: 450px;
+    background: lightgrey;
+    padding: 5px;
+}
+.container article .bg {
+    background-color: #fff;
+    position: relative;
+}
+article .bg .sales {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    padding: 5px 8px;
+    line-height: 3;
+    font-size: 13px;
+    font-weight: 500;
+    background: #e04313;
+    color: #fff;
+    border-radius: 50px;
+}
+article .bg .img-box {
+    width: 240px;
+    height: 240px;
+    padding: 1px;
+}
+article .bg .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+article .bg .content {
+    text-align: center;
+    padding: 15px 0;
+}
+article .bg .content h2 {
+    font-size: 16px;
+    margin: 10px;
+    font-weight: 400;
+}
+article .bg .content p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #234dab;
+}
+article .bg .content p del {
+    color: rgb(150, 150, 150);
+}
+article .bg .content .disc{
+    color: rgb(224, 67, 19);
+}
+article .bg .content p::before, article .bg .content p::after {
+    content: "";
+    height: 2px;
+    width: 25%;
+    background-color: #c7c7c7;
+    display: inline-block;
+    margin-bottom: 3.5px;
+}
+article .bg .content .disc::before, article .bg .content .disc::after {
+    content: "";
+    height: 2px;
+    width: 15%;
+    background-color: #c7c7c7;
+    display: inline-block;
+    margin-bottom: 3.5px;
+}
+article .bg .content p::before {
+    margin-right: 10px;
+}
+article .bg .content p::after {
+    margin-left: 10px;
+    
+}
